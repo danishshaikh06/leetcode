@@ -1,0 +1,15 @@
+Use prefix sum when you need to find the sum of numbers between two positions in a list many times, or when you need to find subarrays whose sum equals a given number.
+
+It helps you avoid adding the same numbers again and again.
+
+🧩 Example (very simple)
+Imagine you have:
+nums = [1, 2, 3, 4, 5]
+First, build a running total list:
+prefix = [1, 3, 6, 10, 15]
+
+(each number is the total sum up to that index)
+Now to find sum from index 1 to 3:
+sum(1,3) = prefix[3] - prefix[0] = 10 - 1 = 9
+
+sum(i,j)=prefix[j]−prefix[i−1]

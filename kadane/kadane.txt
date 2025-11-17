@@ -1,0 +1,15 @@
+🔹 Kadane’s — “Just make it as large as possible”
+
+Kadane’s is greedy and continuous.
+It walks through the array, keeps adding numbers as long as the total is positive, and restarts when the total becomes negative.
+
+It’s like saying:
+“Keep growing the sum — unless it starts hurting me.”
+
+📘 Example:
+nums = [-2, 1, -3, 4, -1, 2, 1, -5, 4]
+# Kadane → max sum = 6, subarray = [4, -1, 2, 1]
+
+
+Kadane doesn’t care what the sum equals.
+It only cares how large it gets.
