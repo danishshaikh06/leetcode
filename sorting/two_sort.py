@@ -7,7 +7,7 @@ class Solution:
 
         # Swap elements that are out of order between nums1 and nums2
         while i >= 0 and j < len(nums2):
-            if nums1[i] > nums2[j] and nums1[i] != nums2[j]:
+            if nums1[i] > nums2[j]:
                 nums1[i], nums2[j] = nums2[j], nums1[i]
             i -= 1
             j += 1
