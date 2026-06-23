@@ -15,4 +15,17 @@ class Solution():
 
         return prev
 
+# using recursion 
 
+def reverse_ll(head):
+    if head is None or head.next is None:
+        return head
+
+    newnode = reverse_ll(head.next)
+    front = head.next 
+    front.next = head
+    head.next = None
+
+    return newnode
+
+    
